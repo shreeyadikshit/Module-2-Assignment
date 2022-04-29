@@ -1,0 +1,76 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: antiquewhite;
+}
+
+h1{
+    font-size: 50px;
+    text-align: center;
+    color:rgb(9, 6, 59);
+}
+
+.card{
+    width: 100%;    
+}
+
+.heading{
+    text-align: center;
+    padding:5px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    width:100px;
+    height:40px;
+    float:right;
+    position: relative;
+    font-weight: bold;
+    border: 3px solid rgb(0, 0, 0);
+    background-color: rgb(230, 77, 204);
+}
+.content{
+    overflow:none;
+    padding:2%;
+    padding-top:55px ;
+    height: 200px;
+    width:100%;
+    border:5px solid black;
+    margin-bottom: 16px;
+    margin-right: 20px;
+    background-color: rgb(102, 206, 233);
+}
+
+/***** For Large Devices *****/
+@media(min-width:992px){
+    .col-lg-4 {
+       width:33.33%;
+       float: left;
+       padding:15px;
+    }
+}
+
+
+/***** For Medium Devices *****/
+@media(min-width: 768px) and (max-width: 991px){
+    .col-md-6,.col-md-12{
+        float: left;
+        padding:15px;
+    }
+    .col-md-6{
+       width: 50%;
+    }
+    .col-md-12{
+        width:100%;;
+    }
+}
+
+/***** For Small Devices *****/
+@media(max-width: 767px){
+    .col-sm-12{
+        width: 100%;
+        padding:15px;
+    }
+}
